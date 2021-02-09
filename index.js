@@ -102,7 +102,6 @@ const formatOutput = (data) => {
 
 };
 
-
 const exec = async () => {
     const gs = await getGames();
     console.log(gs);
@@ -119,7 +118,7 @@ exports.handler = async (event) => {
             'Content-Type' : 'text/html',
             'Access-Control-Allow-Headers' : 'Content-Type',
             'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Methods': 'OPTIONS,POST,GET'
+            'Access-Control-Allow-Methods': 'OPTIONS,GET'
         }
     };
 
